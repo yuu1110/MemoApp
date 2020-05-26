@@ -17,11 +17,11 @@ class Appber extends React.Component {
 const styles = StyleSheet.create({
   appber: {
     position: 'absolute',
+    top: 0,
     left: 0,
     right: 0,
     height: 78,
-    padding: 30,
-    marginTop: 0,
+    paddingTop: 30,
     backgroundColor: '#265366',
     justifyContent: 'center',
     alignItems: 'center',

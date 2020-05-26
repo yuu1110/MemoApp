@@ -7,9 +7,11 @@ import CircleButton from '../elements/CircleButton';
 class MemoListScreen extends React.Component {
   render() {
     return (
-      <View styles={styles.container}>
-        <MemoList />
-        <CircleButton name="plus" />
+      <View style={styles.container}>
+        <MemoList navigation={this.props.navigation} />
+        <CircleButton onPress={() => { this.props.navigation.navigate('MemoEdit'); }}>
+          +
+        </CircleButton>
       </View>
     );
   }
@@ -19,6 +21,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
+    backgroundColor: '#FFFDF6',
+
   },
 });
 
